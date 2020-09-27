@@ -11,15 +11,16 @@
 #include <stdio.h>
 #pragma once
 
-class Cube
-{
-public:
-    double getVolume();
-    double getSurfaceArea();
-    void setLength(double length);
+namespace uiuc {
+    class Cube
+    {
+    public:
+        double getVolume();
+        double getSurfaceArea();
+        void setLength(double length);
 
-private:
-    double length_;
-};
-
+    private:
+        double length_;
+    };
+}
 #endif /* Cube_hpp */

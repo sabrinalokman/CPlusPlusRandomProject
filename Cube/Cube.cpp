@@ -6,7 +6,7 @@
 //
 
 #include "Cube.hpp"
-
+namespace uiuc {
 double Cube::getSurfaceArea()
 {
     return 6 * length_ * length_;
@@ -20,4 +20,5 @@ double Cube::getVolume()
 void Cube::setLength(double length)
 {
     length_ = length;
+}
 }

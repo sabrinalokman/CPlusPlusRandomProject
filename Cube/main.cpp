@@ -10,10 +10,12 @@
 
 int main()
 {
-    Cube c;
-    c.setLength(3.48);
-    double volume = c.getVolume();
-    std::cout << "The volume is: " << volume << "\n\n";
+    uiuc::Cube c;
+    c.setLength(2.4);
+    
+    std::cout << "The volume is: " << c.getVolume() << "\n\n";
+    
+    std::cout << "Surface area is: " << c.getSurfaceArea() << std::endl;
 
     return 0;
 }
