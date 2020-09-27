@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F3950A89251FB54A00E12429 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3950A88251FB54A00E12429 /* main.cpp */; };
+		F3950A92251FB58900E12429 /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3950A90251FB58900E12429 /* Cube.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		F3950A85251FB54A00E12429 /* Cube */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cube; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3950A88251FB54A00E12429 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F3950A90251FB58900E12429 /* Cube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cube.cpp; sourceTree = "<group>"; };
+		F3950A91251FB58900E12429 /* Cube.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cube.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				F3950A88251FB54A00E12429 /* main.cpp */,
+				F3950A90251FB58900E12429 /* Cube.cpp */,
+				F3950A91251FB58900E12429 /* Cube.hpp */,
 			);
 			path = Cube;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3950A92251FB58900E12429 /* Cube.cpp in Sources */,
 				F3950A89251FB54A00E12429 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

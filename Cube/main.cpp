@@ -6,9 +6,14 @@
 //
 
 #include <iostream>
+#include "Cube.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main()
+{
+    Cube c;
+    c.setLength(3.48);
+    double volume = c.getVolume();
+    std::cout << "The volume is: " << volume << "\n\n";
+
     return 0;
 }
