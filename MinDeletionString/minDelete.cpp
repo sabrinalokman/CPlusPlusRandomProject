@@ -45,10 +45,13 @@ int main() {
   Solution s;
   std::string x = "aab";
   std::cout << s.minimumDeletion(x) << "\n";
+  //answer 0
   
   std::string y = "aaabbbcc";
   std::cout << s.minimumDeletion(y) << "\n";
+  //answer 2
   
   std::string z = "ceabaacb";
   std::cout << s.minimumDeletion(z) << "\n";
+  //answer 2
 }
