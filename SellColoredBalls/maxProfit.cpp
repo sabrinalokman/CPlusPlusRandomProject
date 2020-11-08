@@ -17,22 +17,32 @@ Return the maximum total value that you can attain after selling orders colored 
 */
 
 //TO DO: SOLVE ISSUE WITH CASE 4 TLE
+/*
+Greedy solution
+Get the maximum amount in inventory
+add that to sum
+reduce the maximum amount by 1
+iterate through orders
+return sum
+*/
 
 class Solution {
 public:
     int maxProfit(vector<int>& inventory, int orders) {
-        unsigned long long sum = 0, tempMax, tempIter;
+        unsigned long long sum = 0, tempMax, tempIndex;
         vector<int>::iterator result;
-        unsigned long long fix = 1000000007;
+        unsigned long long fix = pow(10.0, 9.0) + 7;
+        
         while(orders--) {
         	sum += *std::max_element(inventory.begin(), inventory.end());
-        	// I need the iterator for that max element
-        	tempIter = std::distance(inventory.begin(), std::max_element(inventory.begin(), inventory.end()));
-        	tempMax = inventory[tempIter];
-        	inventory[tempIter] = tempMax - 1; 
+        	// I need the index for that max element
+        	// we do this ebcause we want to substract the element by 1
+        	tempIndex = std::distance(inventory.begin(), std::max_element(inventory.begin(), inventory.end()));
+        	tempMax = inventory[tempIndex]; //store the old maximum amount
+        	inventory[tempIndex] = tempMax - 1;  //reduce the old value by 1 
         }
 
-        int sumOpt = sum % fix;
+        int sumOpt = sum % fix; // try to fix the TLE
 
         return sumOpt;
     }
