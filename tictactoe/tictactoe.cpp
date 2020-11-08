@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+/*TODO: the winning condition*/
+
 class Player {
   public:
     Player(char id) : id(id) {};
