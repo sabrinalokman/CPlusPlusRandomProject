@@ -25,11 +25,9 @@ public:
         vector<int>::iterator result;
         unsigned long long fix = 1000000007;
         while(orders--) {
-        	result = std::max_element(inventory.begin(), inventory.end());
         	sum += *std::max_element(inventory.begin(), inventory.end());
-
         	// I need the iterator for that max element
-        	tempIter = std::distance(inventory.begin(), result);
+        	tempIter = std::distance(inventory.begin(), std::max_element(inventory.begin(), inventory.end()));
         	tempMax = inventory[tempIter];
         	inventory[tempIter] = tempMax - 1; 
         }
@@ -43,20 +41,26 @@ public:
 
 int main() {
 	vector<int> i1{2,5};
+	// sell 5 4 3 2
 	int o1 = 4;
 	Solution s;
 	std::cout << s.maxProfit(i1, o1) << " ";
+	//answer 14
 
 	vector<int> i2{3,5};
+	// sell 5 4 3 3 2 2
 	int o2 = 6;
 	std::cout << s.maxProfit(i2, o2)<< " ";
+	//answer 19
 
 	vector<int> i3{2,8,4,10,6};
 	int o3 = 20;
 	std::cout << s.maxProfit(i3, o3)<< " ";
+	//answer 110
 
-	vector<int> i4{1000000000};
-	int o4 = 1000000000;
-	std::cout << s.maxProfit(i4, o4)<< " ";
+	// vector<int> i4{1000000000};
+	// int o4 = 1000000000;
+	// std::cout << s.maxProfit(i4, o4)<< " ";
+	//answer 21
 
 }
