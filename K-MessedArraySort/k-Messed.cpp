@@ -17,13 +17,11 @@ input:  arr = [1, 4, 5, 2, 3, 7, 8, 6, 10, 9], k = 2
 output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 */
 
-//TO DO: FIX ALGO TO PASS THE LAST TEST CASE
-
 vector<int> sortKMessedArray(vector<int> arr, int k ) 
 {
   // your code goes here
-	for (int i = arr.size()-1; i >= 0; i--) {
-    	for (int j = 1; j <= k; j++)  {
+	for (int j = k; j > 0; j--){
+    	for (int i = arr.size()-1; i >= 0; i--){
       		if (arr[i] < arr[i-j] && (i-j) >= 0) {
         		int temp = arr[i];
         		arr[i] = arr[i-j];
