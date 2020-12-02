@@ -1,0 +1,6 @@
+"bit", "dog", ["but","put","big","pot","pog","dog","lot"]
+"no", "go", ["to"]
+"bit", "pog", ["but","put","big","pot","pog","pig","dog","lot"]
+"aa", "bb", ["ab","bb"]
+"abc", "ab", ["abc","ab"]
+"aa", "bbb", ["ab","bb"]
